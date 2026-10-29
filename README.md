@@ -4,7 +4,7 @@
 
 - Mauro
 - Niels
-- Snezhana
+- Snezhana: Team collection (team cards and detail pages), news item "Iterations"
 
 ## Design
 
