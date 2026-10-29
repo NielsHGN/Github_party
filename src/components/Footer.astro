@@ -1,8 +1,12 @@
+---
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+
 <div class="container">
   <footer>
     <nav>
       <span class="visually-hidden">CCK</span>
-      <a href="/"
+      <a href={`${base}/`}
         ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 233 78">
           <path
             fill="currentColor"
@@ -12,11 +16,11 @@
       </a>
       <ul class="nav__list" id="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="/about">About us</a>
+          <a class="nav__link" href={`${base}/about`}>About us</a>
         </li>
-        <li class="nav__item"><a class="nav__link" href="/news">News</a></li>
+        <li class="nav__item"><a class="nav__link" href={`${base}/news`}>News</a></li>
         <li class="nav__item">
-          <a class="nav__link" href="/#">Join us</a>
+          <a class="nav__link" href={`${base}/#`}>Join us</a>
         </li>
       </ul>
     </nav>
