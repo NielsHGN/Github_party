@@ -1,5 +1,11 @@
 # CCK
 
+## Team
+
+- Mauro
+- Niels
+- Snezhana
+
 ## Design
 
 <https://www.figma.com/design/Qepjp5d40858EedDBt96Yu/CCK?node-id=403-244&t=3JWw8tYXLN9YaCl4-0>
