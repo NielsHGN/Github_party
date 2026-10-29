@@ -5,7 +5,7 @@
 - Website for Creative Code Kortrijk (CCK), a new creative coding club in Kortrijk, Belgium.
 - For artists, designers, programmers and anyone curious about art and code, from beginners to professionals.
 - The site presents the club's workshops, foundations (core values), team members and news.
-- Visitors can hunt for the hidden digits of a 4-digit code on the site and enter them on a `/code` page.
+- Visitors can hunt for the hidden digits of a 4-digit code on the site and enter them on the `/code` page.
 - Built by a team of three students (Mauro, Niels, Snezhana) using Git and GitHub Flow.
 - Design: [Figma](https://www.figma.com/design/Qepjp5d40858EedDBt96Yu/CCK?node-id=403-244&t=3JWw8tYXLN9YaCl4-0).
 
