@@ -2,7 +2,7 @@
 
 ## Team
 
-- Mauro:commit
+- Mauro: commit
 - Niels
 - Snezhana
 
