@@ -2,14 +2,14 @@
 
 ## Project
 
-- Website for **Creative Code Kortrijk (CCK)**, a new creative coding club in Kortrijk, Belgium.
+- Website for **Creative Code Kortrijk (CCK)**, a creative coding club in Kortrijk, Belgium.
 - Audience: artists, designers, students and anyone curious about coding as a creative medium
   (generative art, pen plotters, p5.js, Max/MSP, ...).
 - The site presents the club's **workshops**, its **foundations** (what the club stands for), its
   **team**, and **news**. A hidden 4-digit code puzzle (`/code` page) is planned.
 - Built by a team of three students (Mauro, Niels, Snezhana) as the Web 3 "Git Party" assignment,
   using Git and GitHub Flow: feature branches (`feature/...`) and pull requests into `main`.
-- Design: Figma file linked in `README.md`.
+- Design source: Figma file linked in `README.md`.
 
 ## Stack & constraints
 
@@ -17,6 +17,8 @@
   `astro/tsconfigs/base` with `strictNullChecks`.
 - No UI framework integrations and no CSS framework: plain `.astro` components and plain CSS in
   `src/styles/` (`reset.css`, `global.css`, `markdown.css`).
+- Design tokens are CSS custom properties on `:root` in `global.css`: colors (`--color-*`), fluid
+  type scale (`--fs-*`) and fluid spacing (`--sp-*`) built with `clamp()`.
 - Font: `@fontsource-variable/space-grotesk`, imported in `src/layouts/Base.astro`.
 - Layouts: `src/layouts/Base.astro` (Header + Footer) and `src/layouts/Markdown.astro`.
 - Pages in `src/pages/`: `index.astro`, `about.md`, `news.astro`. Detail pages use the collection
