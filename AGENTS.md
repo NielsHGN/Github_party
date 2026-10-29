@@ -16,7 +16,7 @@
   - `workshops` (`src/content/workshops/`): `title`, `image`
   - `foundations` (`src/content/foundations/`): `title`, `description`
   - `team` (`src/content/team/`): `name`, `function`, `bio`, `pic`
-  - `news` (`src/content/news/`): not defined yet
+  - `news` (`src/content/news/`): `title`, `date`
 - A missing frontmatter field makes the build fail.
 - Images live in an `img/` folder per collection and are referenced by relative path in the frontmatter.
 - Detail pages use the entry `id` as dynamic route parameter (`/workshops/<id>`, `/foundations/<id>`, `/team/<id>`).
