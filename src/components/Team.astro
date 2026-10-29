@@ -30,7 +30,7 @@ const team = await getCollection("team");
 <section class="container" id="team">
   <header>
     <h2><span>Team</span></h2>
-    <p>Check these superheroes</p>
+    <p class="superheroes">Check these superheroes</p>
   </header>
   <ul>
     {
@@ -42,6 +42,13 @@ const team = await getCollection("team");
     }
   </ul>
 </section>
+
+<script>
+  const superheroes = document.querySelector(".superheroes");
+  superheroes?.addEventListener("click", () => {
+    superheroes.textContent = "🦸 The fourth digit of the code is 4";
+  });
+</script>
 
 <style>
   ul {

@@ -13,7 +13,7 @@ Find the 4 hidden digits and enter them on the [/code](/code) page.
 - Digit 1 (Niels): hover over the p5.js workshop card on the home page.
 - Digit 2: _teammate_
 - Digit 3 (Niels): open the browser console on the /news page.
-- Digit 4: _teammate_
+- Digit 4 (Snezhana): click on "Check these superheroes" in the Team section on the home page.
 
 ## Design
 
