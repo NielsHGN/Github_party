@@ -12,10 +12,11 @@ export async function getStaticPaths() {
 
 const { foundation } = Astro.props;
 const { Content } = await render(foundation);
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <Markdown>
-  <a href="/#foundations">Foundations</a>
+  <a href={`${base}/#foundations`}>Foundations</a>
   <h2><span>{foundation.data.title}</span></h2>
   <Content />
 </Markdown>

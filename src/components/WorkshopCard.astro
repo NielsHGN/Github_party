@@ -2,6 +2,7 @@
 import ArrowLink from "./ArrowLink.astro";
 
 const { id, title, image, theme = "grey", secret } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
 ---
 
 <article
@@ -12,7 +13,7 @@ const { id, title, image, theme = "grey", secret } = Astro.props;
    <h3><span>{title}</span></h3>
     <ArrowLink
       class="link"
-      href={`/workshops/${id}`}
+      href={`${base}/workshops/${id}`}
       title="Learn more"
     />
     <img
