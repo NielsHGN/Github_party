@@ -22,7 +22,23 @@ const foundations = await getCollection("foundations");
       ))
     }
   </ul>
+  <p class="digit" hidden>You opened every foundation. Digit 2 is <strong>2</strong>.</p>
 </section>
+
+<script>
+  // Digit 2: revealed once every foundation has been opened at least once
+  const cards = document.querySelectorAll("#foundations details");
+  const digit = document.querySelector<HTMLElement>("#foundations .digit");
+  const opened = new Set<Element>();
+
+  cards.forEach((card) => {
+    card.addEventListener("toggle", () => {
+      if (!card.hasAttribute("open")) return;
+      opened.add(card);
+      if (digit && opened.size === cards.length) digit.hidden = false;
+    });
+  });
+</script>
 
 <style>
   h2 {
@@ -31,5 +47,9 @@ const foundations = await getCollection("foundations");
 
   ul {
     counter-reset: counter;
+  }
+
+  .digit {
+    text-align: center;
   }
 </style>
