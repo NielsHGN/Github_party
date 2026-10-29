@@ -28,6 +28,7 @@ const workshops = (await getCollection("workshops")).sort((a, b) =>
             title={workshop.data.title}
             image={workshop.data.image}
             theme={themes[i % themes.length]}
+            secret={workshop.id === "02-p5js" ? "7" : undefined}
           />
         </li>
       ))

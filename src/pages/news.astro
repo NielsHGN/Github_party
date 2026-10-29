@@ -17,7 +17,6 @@ const items = await Promise.all(
 <Base title="News">
   <div class="container">
     <h2><span>News</span></h2>
-    <p class="code">The third digit of the code is 3</p>
     <ul>
       {
         items.map(({ data, Content }) => (
@@ -37,6 +36,10 @@ const items = await Promise.all(
     </ul>
   </div>
 </Base>
+
+<script>
+  console.log("🔍 Psst... the third digit of the code is 3");
+</script>
 
 <style>
   ul > li:not(:last-child) {

@@ -3,8 +3,17 @@
 ## Team
 
 - Mauro: commit
-- Niels
+- Niels: workshops, news page, /code page
 - Snezhana: Team collection (team cards and detail pages), news item "Iterations"
+
+## Hidden code
+
+Find the 4 hidden digits and enter them on the [/code](/code) page.
+
+- Digit 1 (Niels): hover over the p5.js workshop card on the home page.
+- Digit 2: _teammate_
+- Digit 3 (Niels): open the browser console on the /news page.
+- Digit 4: _teammate_
 
 ## Design
 

@@ -1,10 +1,13 @@
 ---
 import ArrowLink from "./ArrowLink.astro";
 
-const { id, title, image, theme = "grey" } = Astro.props;
+const { id, title, image, theme = "grey", secret } = Astro.props;
 ---
 
-<article class={`workshop-card workshop-card--${theme}`}>
+<article
+  class={`workshop-card workshop-card--${theme}`}
+  data-secret={secret}
+>
   <div>
    <h3><span>{title}</span></h3>
     <ArrowLink
@@ -30,6 +33,16 @@ const { id, title, image, theme = "grey" } = Astro.props;
     border-radius: var(--br-l);
 
     padding: var(--sp-xl);
+    position: relative;
+  }
+
+  article[data-secret]:hover::after {
+    content: "first digit: " attr(data-secret);
+    position: absolute;
+    bottom: var(--sp-xs);
+    right: var(--sp-m);
+    font-size: 0.8rem;
+    opacity: 0.6;
   }
 
   div {
